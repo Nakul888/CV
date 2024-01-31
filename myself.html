@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>RESUME</title>
+   <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <table cellspacing="20">
+        <tr>
+            <td>
+                <div class="avatar">
+                    <img src="photo.png.jpeg" alt="Image">
+                </div>                         
+            </td>                               
+            <td>
+                <h1>Nakul Sharma</h1>         
+                <p>Currently  pursuing B.tech in MAC(Mathematics And Computing) from NSUT located in Dwarka </p>
+                <p> Also cracked JEE Mains with AIR 36251 in 2022.</p>
+                <a href="http://192.168.1.13:3000/contact.html">My Contact</a>
+            </td>
+        </tr>
+        
+    </table>
+
+    <script>
+        const handleMsgbox = () => {
+            const msg = document.getElementById("msg_box");
+            const loadingbar = document.getElementById("loadingbar")
+            const myvideo = document.getElementById("myvideo")
+            myvideo.pause();
+            loadingbar.style.display ="flex"
+            setTimeout(()=>{
+                myvideo.play()
+                myvideo.style.display ="flex"
+                loadingbar.style.display ="none"
+                msg.innerHTML = "Dekh kya raha hai gaand dega kya bhen ke lode."
+            },2000)
+           
+        }
+        
+    </script>
+
+    <div class="comdey">
+        <h3>My Profile Section</h3>
+        <img style="display: none;" id="loadingbar" width="40px" height="40px" src="/loading.gif.gif" alt="">
+        <h1 id="msg_box"></h1>
+        <video height="300px" width="300px" id="myvideo" style="display: none;" src="/video.mp4" autoplay loop>
+        </video>
+        <button onclick="handleMsgbox()">View Profile</button>
+    
+    </div>
+
+    <hr>
+    <h3>Hobbies</h3>
+    <ul>
+        <li> CRICKET</li>
+        <li> WORKOUT</li>
+        <li> RAP MUSIC</li>
+    </ul>
+    <hr>
+    <h3>Achievements</h3>
+    <ol>
+        <li> Cracked JEE</li>
+        <li> Fit Body</li>
+        <li>Learned C/C++</li>
+        
+    
+    </ol>
+    <hr>
+    <h3> Work Experience</h3>
+    <table>
+        <tr>
+            
+            <th>
+                Dates     
+            </th>
+            <th>
+                Work
+            </th>
+           </tr>
+        <tr>
+            <td>
+                2020-2022
+            </td>
+            <td>
+                Jee preparation
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2022-2026
+            </td>
+            <td>
+                B.tech
+            </td>
+        </tr>
+    </table>
+    <HR></HR>
+    <h3>Skills</h3>
+    <table border="1">
+        <tr>
+            <td>
+                C/C++  *****
+            </td>
+            
+            <td>
+                DSA  **
+            </td>
+            
+        </tr>
+        <tr>                                  
+            <td>
+                HTML  ****
+            </td>
+                                              
+            <td>
+                CSS  *
+            </td>
+            
+        </tr>
+    </table>
+
+
+    
+</body>
+</html>
